@@ -4,8 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Overflow</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 300px;
+            border: 3px solid steelblue;
+            overflow-y: scroll;
+        }
+       /*  #box-1{
+            overflow: auto;
+            overflow-x: hidden;
+        } */
+         .ellipsis{
+            width: 200px;
+            border: 2px solid steelblue;
+            white-space: nowrap;
+            overflow: hidden;
+            /* text-overflow: ellipsis; */
+            text-overflow: clip;
+         }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <p title="I am a serious learner.
+            I am a investing at least 6-8 hours every day.
+            No gap at all" class="ellipsis">I am a serious learner.
+            I am a investing at least 6-8 hours every day.
+            No gap at all </p>
+    </header>
+    <section>
+        <div id="box-1" class="box">
+            <h3>My Text Box</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, molestiae praesentium perferendis culpa eveniet hic explicabo, repellendus ea veniam natus tempore illo tenetur sint alias provident quidem at corrupti cupiditate impedit soluta in voluptatibus doloremque, rerum saepe! Natus, quae id. Maiores saepe vero, repellat, reprehenderit labore magni dolore atque consequuntur voluptatibus fuga provident corporis nostrum inventore. Debitis consectetur asperiores eos, ab, eveniet nemo placeat magni laborum vel et iusto velit rerum officia at, quaerat optio incidunt! Dolore illo reiciendis commodi soluta earum, totam tempore voluptatum quaerat, nemo, quam veritatis eveniet laudantium provident quo quae perspiciatis omnis debitis maxime nesciunt consectetur consequatur repudiandae? Qui atque ea officiis aliquam voluptatibus iusto amet, natus quos quisquam facere! Placeat voluptate, harum dolore labore odit nemo perferendis cum ipsum illo quod nulla consequuntur magni. Exercitationem atque soluta sapiente, rerum quo, similique omnis quasi sint error suscipit ipsa sunt est maiores ab! Maiores suscipit deserunt culpa ipsam eligendi ex fugit omnis placeat quisquam et repellendus, impedit consectetur magnam error eveniet totam fuga. Perferendis similique porro, minus sint quibusdam omnis. Voluptas, delectus dolorum! At ad ipsum, facilis perferendis, corporis temporibus enim deserunt, beatae dicta iste quia provident non. Tempore iure, atque sed quo temporibus enim excepturi vel!</p>
+        </div>
+        <div class="box">
+            <h3>My Text Box</h3>
+            <p>Itaque corrupti quidem tenetur aperiam.
+                 Ullam, maxime. Nam similique est alias
+                  ipsa totam deleniti placeat numquam iusto 
+                  iure nostrum? Unde commodi tenetur deleniti 
+                  architecto. Eveniet nisi molestiae unde aperiam. Voluptatibus, dolorem veritatis? Totam quaerat repudiandae rem iure eligendi itaque tenetur laudantium saepe libero aliquam expedita suscipit impedit molestiae nulla esse fugit beatae ipsum, unde nesciunt! Sapiente eveniet dolore vitae impedit pariatur porro earum voluptates quos odit eligendi reiciendis quia architecto similique, nesciunt facere maxime itaque! Consequatur similique earum eos tenetur? Tempora deleniti quo ipsam? Cupiditate quaerat repellat dignissimos ut, impedit doloribus dicta expedita voluptate iure saepe facere cumque minima officia corrupti, fugit eos qui, cum laborum? Animi dicta blanditiis velit perferendis praesentium, doloremque, minus in deserunt aliquam, aperiam odit totam consequatur id nihil possimus error accusantium fugit nulla sapiente enim nostrum saepe? Vel possimus repellat pariatur enim tempora sequi debitis quibusdam dignissimos doloribus. Laudantium exercitationem laboriosam nesciunt quam, nulla officiis, culpa accusantium modi dolorum, sapiente placeat ut magni. Deserunt, rerum aspernatur voluptatem possimus dolores maiores sed illo. Laboriosam ipsa et aspernatur aut ducimus nihil, nemo magnam numquam reiciendis pariatur eligendi quod hic magni explicabo soluta nam ea quos omnis temporibus odit. Praesentium accusantium fuga a perferendis veritatis, voluptatum eos molestias.</p>
+        </div>
+    </section>
 </body>
 </html>
