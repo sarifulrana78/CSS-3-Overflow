@@ -4,8 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transform</title>
+    <style>
+        .container, .inner {
+            width: 200px;
+            height: 200px;
+          
+
+        }
+         .container{
+            border: 2px solid steelblue;
+            background-color: aquamarine;
+         }
+         .inner{
+            border: 2px solid brown;
+            background-color: palegoldenrod;
+           /*  transform: scale(0.5,0.25); */
+           /* transform: rotate(60deg); */
+           /* transform: scale(0.5,.75) translateX(100px) rotate(45deg); */
+           /* transform: translateX(100px); */
+
+         }
+         .inner:hover{
+            transform:scale(0.5) translateX(10px) rotate(45deg);
+         }
+    </style>
 </head>
 <body>
     <h2>Explore Transform and Translate</h2>
+    <!-- container*3{container $}>.inner{Inner $} -->
+    <div class="container">
+        <div class="inner">Inner 1</div>
+    </div>
+    <div class="container">
+        <div class="inner">Inner 2</div>
+    </div>
+    <div class="container">
+        <div class="inner">Inner 3</div>
+    </div>
 </body>
 </html>
